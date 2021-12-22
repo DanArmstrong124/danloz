@@ -5,6 +5,8 @@ var countDownDateThree = new Date("Oct 18, 2022 00:00:00").getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
 
+    var year = 365;
+
   // Get today's date and time
   var now = new Date().getTime();
 
@@ -53,4 +55,8 @@ var x = setInterval(function() {
       if (distanceThree < 0) {
         document.getElementById("ani").innerHTML = "Happy Birthday Lauren!!!";
       }
+
+      var aniper = year - days1;
+      alert(aniper);
+    
   }, 1000);
