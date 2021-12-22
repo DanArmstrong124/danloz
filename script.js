@@ -56,7 +56,12 @@ var x = setInterval(function() {
         document.getElementById("ani").innerHTML = "Happy Birthday Lauren!!!";
       }
 
-      var aniper = year - days1;
-      //alert(aniper);
+      var aniper = (days1 / year) * 100;
+      var danper = (days2 / year) * 100;
+      var lozper = (days3 / year) * 100;
+
+      document.getElementById('danbar').style.width = danper + "%";
+      document.getElementById('lozbar').style.width = lozper + "%";
+      document.getElementById('anibar').style.width = aniper + "%";
     
   }, 1000);
