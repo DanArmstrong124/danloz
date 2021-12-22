@@ -56,9 +56,9 @@ var x = setInterval(function() {
         document.getElementById("ani").innerHTML = "Happy Birthday Lauren!!!";
       }
 
-      var aniper = (days1 / year) * 100;
-      var danper = (days2 / year) * 100;
-      var lozper = (days3 / year) * 100;
+      var aniper = (100 - (days1 / year) * 100);
+      var danper = (100 - (days2 / year) * 100);
+      var lozper = (100 - (days3 / year) * 100);
 
       document.getElementById('danbar').style.width = danper + "%";
       document.getElementById('lozbar').style.width = lozper + "%";
