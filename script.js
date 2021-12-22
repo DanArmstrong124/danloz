@@ -57,6 +57,6 @@ var x = setInterval(function() {
       }
 
       var aniper = year - days1;
-      alert(aniper);
+      //alert(aniper);
     
   }, 1000);
