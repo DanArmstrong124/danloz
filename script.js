@@ -129,13 +129,15 @@ var x = setInterval(function() {
       timestop = timer * 60;
       setTimeout(function(){
         baby.play();
-        setInterval(() => {
+        var hello = setInterval(() => {
           timegone = timegone + 1;
           document.title = timegone + " / " + timestop;
           if (timegone == timestop) {
             baby.pause();
             document.title = "Dan & Loz";
-            clearInterval;
+            timegone = 0;
+            timestop = 0;
+            clearInterval(hello);
           };
         }, 1000);
       },50)
