@@ -2,7 +2,7 @@ var countDownDateOne = new Date("Nov 24, 2022 00:00:00").getTime();
 var countDownDateTwo = new Date("Apr 1, 2022 00:00:00").getTime();
 var countDownDateThree = new Date("Oct 18, 2022 00:00:00").getTime();
 var countDownDateFour = new Date("Apr 11, 2022 14:40:00").getTime();
-var countDownDateFive = new Date("May 9, 2022 14:00:00").getTime();
+var countDownDateFive = new Date("May 18, 2022 16:00:00").getTime();
 var countDownDateSix = new Date("Oct 19, 2022 00:00:00").getTime();
 
 // Update the count down every 1 second
