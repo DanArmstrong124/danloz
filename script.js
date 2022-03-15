@@ -135,6 +135,7 @@ var x = setInterval(function() {
           if (timegone == timestop) {
             baby.pause();
             document.title = "Dan & Loz";
+            clearInterval;
           };
         }, 1000);
       },50)
