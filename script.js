@@ -126,7 +126,7 @@ var x = setInterval(function() {
 
   setInterval(function(){
 
-    var timer = timeinput.value();
+    var timer = timeinput.value;
 
   }, 1);
 
