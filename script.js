@@ -117,3 +117,22 @@ var x = setInterval(function() {
       document.getElementById('duebar').style.width = dueper + "%";
     
   }, 1000);
+
+  var timeinput = document.getElementById('timeinput');
+  var timeenter = document.getElementById('timeenter');
+  var baby = document.getElementById('babysound');
+  var timestop = 0;
+  var timegone = 0;
+
+  setInterval(function(){
+
+    var timer = timeinput.value();
+
+  }, 1);
+
+  timeenter.addEventListener('click', function(){
+      timestop = timer * 60;
+      setTimeout(function(){
+        baby.play();
+      },50)
+  });
