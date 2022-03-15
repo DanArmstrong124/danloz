@@ -131,9 +131,11 @@ var x = setInterval(function() {
         baby.play();
         setInterval(() => {
           timegone = timegone + 1;
+          document.title = timegone + " / " + timestop;
           if (timegone == timestop) {
             baby.pause();
-          }
+            document.title = "Dan & Loz";
+          };
         }, 1000);
       },50)
   });
