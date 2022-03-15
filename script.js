@@ -124,13 +124,8 @@ var x = setInterval(function() {
   var timestop = 0;
   var timegone = 0;
 
-  setInterval(function(){
-
-    var timer = timeinput.value;
-
-  }, 1);
-
   timeenter.addEventListener('click', function(){
+  var timer = timeinput.value;
       timestop = timer * 60;
       setTimeout(function(){
         baby.play();
