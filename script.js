@@ -129,5 +129,11 @@ var x = setInterval(function() {
       timestop = timer * 60;
       setTimeout(function(){
         baby.play();
+        setInterval(() => {
+          timegone = timegone + 1;
+          if (timegone == timestop) {
+            baby.pause();
+          }
+        }, 1000);
       },50)
   });
