@@ -4,6 +4,7 @@ var countDownDateThree = new Date("Oct 18, 2022 00:00:00").getTime();
 var countDownDateFour = new Date("Apr 11, 2022 14:40:00").getTime();
 var countDownDateFive = new Date("May 18, 2022 16:00:00").getTime();
 var countDownDateSix = new Date("Oct 19, 2022 00:00:00").getTime();
+var countDownDateSeven = new Date("May 21, 2022 13:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -20,6 +21,7 @@ var x = setInterval(function() {
   var distanceFour = countDownDateFour - now;
   var distanceFive = countDownDateFive - now;
   var distanceSix = countDownDateSix - now;
+  var distanceSeven = countDownDateSeven - now;
 
   // Time calculations for days, hours, minutes and seconds
   var days1 = Math.floor(distanceOne / (1000 * 60 * 60 * 24));
@@ -81,6 +83,16 @@ var x = setInterval(function() {
         // Display the result in the element with id="demo"
         document.getElementById("due").innerHTML = days6 + "d " + hours6 + "h "
         + minutes6 + "m " + seconds6 + "s ";
+
+              // Time calculations for days, hours, minutes and seconds
+      var days7 = Math.floor(distanceSeven / (1000 * 60 * 60 * 24));
+      var hours7 = Math.floor((distanceSeven % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes7 = Math.floor((distanceSeven % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds7 = Math.floor((distanceSeven % (1000 * 60)) / 1000);
+    
+        // Display the result in the element with id="demo"
+        document.getElementById("gen").innerHTML = days7 + "d " + hours7 + "h "
+        + minutes7 + "m " + seconds7 + "s ";
   
     // If the count down is finished, write some text
     if (distanceOne < 0) {
@@ -96,10 +108,13 @@ var x = setInterval(function() {
         document.getElementById("twe").innerHTML = "ONE HEALTHY BUBBA!!!";
       }
       if (distanceFive < 0) {
-        document.getElementById("six").innerHTML = "WAS IT A GIRL???!!!";
+        document.getElementById("six").innerHTML = "THE COUNTDOWN HAS BEGUN!!!";
       }
       if (distanceSix < 0) {
         document.getElementById("due").innerHTML = "Happy Birthday Bubba!!!";
+      }
+      if (distanceSeven < 0) {
+        document.getElementById("gen").innerHTML = "WAS IT A GIRL???!!!";
       }
 
       var aniper = (100 - (days1 / year) * 100);
@@ -108,6 +123,7 @@ var x = setInterval(function() {
       var tweper = (100 - (days4 / year) * 100);
       var sixper = (100 - (days5 / year) * 100);
       var dueper = (100 - (days6 / year) * 100);
+      var genper = (100 - (days7 / year) * 100);
 
       document.getElementById('danbar').style.width = danper + "%";
       document.getElementById('lozbar').style.width = lozper + "%";
@@ -115,6 +131,7 @@ var x = setInterval(function() {
       document.getElementById('twebar').style.width = tweper + "%";
       document.getElementById('sixbar').style.width = sixper + "%";
       document.getElementById('duebar').style.width = dueper + "%";
+      document.getElementById('genbar').style.width = genper + "%";
     
   }, 1000);
 
